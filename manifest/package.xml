@@ -32,5 +32,18 @@
         <members>*</members>
         <name>StaticResource</name>
     </types>
+
+     <types>
+        <members>*</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>RecordType</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>CustomField</name>
+    </types>
     <version>67.0</version>
 </Package>

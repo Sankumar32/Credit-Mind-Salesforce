@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>62.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Dynamic Related List</masterLabel>
+    <targets>
+        <target>lightning__RecordPage</target>
+        <target>lightning__AppPage</target>
+        <target>lightning__HomePage</target>
+    </targets>
+    <targetConfigs>
+
+        <targetConfig targets="lightning__RecordPage">
+            <property label="Title" name="title" type="String"
+                description="Override the default related list label." />
+            <property label="Icon Name" name="iconName" type="String"
+                description="SLDS icon name, e.g. standard:contact" />
+            <property label="Child Object API Name" name="sObject" type="String" required="true"
+                default="Contact" description="API name of the child (related) object." />
+            <property label="Related List ID" name="relatedListId" type="String" required="true"
+                default="Contacts"
+                description="Relationship API name as it appears on the parent object, e.g. Contacts or Opportunities." />
+            <property label="Fields" name="fields" type="String"
+                description="Comma-separated field API names to display. Leave blank to use the default related list columns." />
+            <property label="Sort By" name="sortedBy" type="String" default="Name"
+                description="Field API name to sort by initially." />
+            <property label="Sort Direction" name="sortedDirection" type="String" default="asc"
+                datasource="asc,desc" />
+            <property label="Inline Edit" name="editable" type="Boolean" default="false" />
+            <property label="Show New Record Button" name="showAddButton" type="Boolean"
+                default="false" />
+            <property label="Child Lookup Field" name="childRecordField" type="String"
+                description="Lookup field on the child object that points to the parent. Pre-filled when creating a new record, e.g. AccountId." />
+            <property label="Hide Checkbox Column" name="hideCheckboxColumn" type="Boolean"
+                default="true" />
+            <property label="Enable Infinite Loading" name="enableInfiniteLoading" type="Boolean"
+                default="false" />
+            <property label="Page Size" name="pageSize" type="Integer" default="20"
+                description="Number of records to load." />
+            <property label="Height (px)" name="height" type="Integer" default="300"
+                description="Fixed height in pixels. Required when infinite loading is enabled." />
+            <supportedFormFactors>
+                <supportedFormFactor type="Large" />
+            </supportedFormFactors>
+        </targetConfig>
+
+        <targetConfig
+            targets="lightning__AppPage,lightning__HomePage">
+            <property label="Title" name="title" type="String" />
+            <property label="Icon Name" name="iconName" type="String"
+                description="SLDS icon name, e.g. standard:contact" />
+            <property label="Child Object API Name" name="sObject" type="String" required="true"
+                default="Contact" />
+            <property label="Related List ID" name="relatedListId" type="String" required="true"
+                default="Contacts" description="Relationship API name on the parent object." />
+            <property label="Parent Object API Name" name="objectApiName" type="String"
+                required="true" default="Account" description="API name of the parent object." />
+            <property label="Fields" name="fields" type="String"
+                description="Comma-separated field API names to display." />
+            <property label="Sort By" name="sortedBy" type="String" default="Name" />
+            <property label="Sort Direction" name="sortedDirection" type="String" default="asc"
+                datasource="asc,desc" />
+            <property label="Inline Edit" name="editable" type="Boolean" default="false" />
+            <property label="Show New Record Button" name="showAddButton" type="Boolean"
+                default="false" />
+            <property label="Hide Checkbox Column" name="hideCheckboxColumn" type="Boolean"
+                default="true" />
+            <property label="Enable Infinite Loading" name="enableInfiniteLoading" type="Boolean"
+                default="false" />
+            <property label="Page Size" name="pageSize" type="Integer" default="20" />
+            <property label="Height (px)" name="height" type="Integer" default="300" />
+            <supportedFormFactors>
+                <supportedFormFactor type="Large" />
+            </supportedFormFactors>
+        </targetConfig>
+
+    </targetConfigs>
+</LightningComponentBundle>

@@ -1,0 +1,106 @@
+<template>
+    <lightning-card title={cardTitle} icon-name={iconName}>
+        <div slot="actions">
+            <lightning-button-group>
+                <template lwc:if={showAddButton}>
+                    <lightning-button-icon
+                        icon-name="utility:add"
+                        variant="border-filled"
+                        alternative-text="New"
+                        title="New Record"
+                        onclick={handleNew}>
+                    </lightning-button-icon>
+                </template>
+                <lightning-button-icon
+                    icon-name="utility:refresh"
+                    variant="border-filled"
+                    alternative-text="Refresh"
+                    title="Refresh"
+                    onclick={handleRefresh}>
+                </lightning-button-icon>
+            </lightning-button-group>
+        </div>
+
+        <div class="slds-card__body">
+            <template lwc:if={isLoading}>
+                <div class="slds-is-relative loading-container">
+                    <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+                </div>
+            </template>
+
+            <template lwc:elseif={hasError}>
+                <div class="slds-p-around_medium">
+                    <p class="slds-text-color_error">{errorMessage}</p>
+                </div>
+            </template>
+
+            <template lwc:else>
+                <div style={containerStyle}>
+                    <lightning-datatable
+                        key-field="Id"
+                        data={tableData}
+                        columns={tableColumns}
+                        sorted-by={currentSortedBy}
+                        sorted-direction={currentSortedDirection}
+                        draft-values={draftValues}
+                        errors={saveErrors}
+                        hide-checkbox-column={hideCheckboxColumn}
+                        enable-infinite-loading={enableInfiniteLoading}
+                        is-loading={isLoadingMore}
+                        onloadmore={handleLoadMore}
+                        onsave={handleSave}
+                        onsort={handleSort}
+                        oncellchange={handleCellChange}
+                        oncancel={handleCancelEdit}>
+                    </lightning-datatable>
+
+                    <template lwc:if={showEmptyMessage}>
+                        <p class="slds-p-around_medium slds-text-color_weak slds-text-align_center">
+                            No records to display.
+                        </p>
+                    </template>
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+
+    <!-- New Record Modal -->
+    <template lwc:if={showModal}>
+        <section role="dialog" aria-modal="true" class="slds-modal slds-fade-in-open">
+            <div class="slds-modal__container">
+                <header class="slds-modal__header">
+                    <button
+                        class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+                        onclick={handleCloseModal}
+                        title="Close">
+                        <lightning-icon icon-name="utility:close" size="small" alternative-text="Close"></lightning-icon>
+                    </button>
+                    <h2 class="slds-modal__title">{newRecordTitle}</h2>
+                </header>
+                <div class="slds-modal__content slds-p-around_medium">
+                    <template lwc:if={hasFormFields}>
+                        <lightning-record-form
+                            object-api-name={sObject}
+                            fields={formFields}
+                            default-field-values={defaultFieldValues}
+                            mode="edit"
+                            onsuccess={handleSuccess}
+                            oncancel={handleCloseModal}>
+                        </lightning-record-form>
+                    </template>
+                    <template lwc:else>
+                        <lightning-record-form
+                            object-api-name={sObject}
+                            layout-type="Full"
+                            default-field-values={defaultFieldValues}
+                            mode="edit"
+                            onsuccess={handleSuccess}
+                            oncancel={handleCloseModal}>
+                        </lightning-record-form>
+                    </template>
+                </div>
+            </div>
+        </section>
+        <div class="slds-backdrop slds-backdrop_open"></div>
+    </template>
+</template>
