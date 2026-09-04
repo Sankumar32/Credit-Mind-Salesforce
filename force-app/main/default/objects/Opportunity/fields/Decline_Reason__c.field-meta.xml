@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Decline_Reason__c</fullName>
+    <label>Decline Reason</label>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value><fullName>Insufficient Credit History</fullName><default>false</default><label>Insufficient Credit History</label></value>
+            <value><fullName>DTI Too High</fullName><default>false</default><label>DTI Too High</label></value>
+            <value><fullName>Collateral Insufficient</fullName><default>false</default><label>Collateral Insufficient</label></value>
+            <value><fullName>Policy Decline</fullName><default>false</default><label>Policy Decline</label></value>
+            <value><fullName>Fraud Concern</fullName><default>false</default><label>Fraud Concern</label></value>
+            <value><fullName>Other</fullName><default>false</default><label>Other</label></value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

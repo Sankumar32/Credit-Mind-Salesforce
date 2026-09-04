@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Profile xmlns="http://soap.sforce.com/2006/04/metadata">
+    <custom>false</custom>
+
+    <!-- ================= APPLICATION VISIBILITY ================= -->
+    <applicationVisibilities>
+        <application>Equipment_Finance_App</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
+
+    <!-- ================= LAYOUT ASSIGNMENTS ================= -->
+    <layoutAssignments><layout>Account-Customer Layout</layout><recordType>Account.Customer</recordType></layoutAssignments>
+    <layoutAssignments><layout>Account-Broker Layout</layout><recordType>Account.Broker</recordType></layoutAssignments>
+    <layoutAssignments><layout>Account-Funding Vendor Layout</layout><recordType>Account.Funding_Vendor</recordType></layoutAssignments>
+    <layoutAssignments><layout>Account-Funding Source Layout</layout><recordType>Account.Funding_Source</recordType></layoutAssignments>
+    <layoutAssignments><layout>Account-Syndication Layout</layout><recordType>Account.Syndication</recordType></layoutAssignments>
+    <layoutAssignments><layout>Contact-Guarantor Layout</layout><recordType>Contact.Guarantor</recordType></layoutAssignments>
+    <layoutAssignments><layout>Opportunity-New Customer Layout</layout><recordType>Opportunity.New_Customer</recordType></layoutAssignments>
+    <layoutAssignments><layout>Opportunity-Returning Customer Layout</layout><recordType>Opportunity.Returning_Customer</recordType></layoutAssignments>
+    <layoutAssignments><layout>Equipment__c-Equipment Layout</layout></layoutAssignments>
+    <layoutAssignments><layout>Deal__c-Deal Layout</layout></layoutAssignments>
+    <layoutAssignments><layout>Contract__c-Contract Layout</layout></layoutAssignments>
+    <layoutAssignments><layout>Payment_Schedule__c-Payment Schedule Layout</layout></layoutAssignments>
+    <layoutAssignments><layout>Payment__c-Payment Layout</layout></layoutAssignments>
+
+    <!-- ================= OBJECT PERMISSIONS ================= -->
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Account</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Contact</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Opportunity</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Equipment__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Deal__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Contract__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Payment_Schedule__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>Payment__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
+
+    <!-- ================= ACCOUNT FIELDS ================= -->
+    <fieldPermissions><editable>true</editable><field>Account.Account_Type__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Account.Tax_ID__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Account.NAICS_Code__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Account.Annual_Revenue__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Account.Credit_Tier__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Account.Last_Credit_Review__c</field><readable>true</readable></fieldPermissions>
+
+    <!-- ================= CONTACT FIELDS ================= -->
+    <fieldPermissions><editable>true</editable><field>Contact.Role__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Contact.Ownership_Pct__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Contact.SSN_Last4__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Contact.Personal_Credit_Score__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Contact.Net_Worth__c</field><readable>true</readable></fieldPermissions>
+
+    <!-- ================= OPPORTUNITY FIELDS ================= -->
+    <fieldPermissions><editable>true</editable><field>Opportunity.Application_Number__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Opportunity.App_Status__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Opportunity.Product_Type__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Opportunity.Asset_Class__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Opportunity.Requested_Amount__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Opportunity.Requested_Term_Months__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Opportunity.Submitted_Date__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Opportunity.Decision__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Opportunity.Decision_Date__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Opportunity.Decline_Reason__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Opportunity.Underwriter__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Opportunity.Stipulations__c</field><readable>true</readable></fieldPermissions>
+
+    <!-- ================= EQUIPMENT__C FIELDS ================= -->
+    <fieldPermissions><editable>true</editable><field>Equipment__c.Asset_Class__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Equipment__c.Make__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Equipment__c.Model__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Equipment__c.Year__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Equipment__c.Serial_Number__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Equipment__c.VIN__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Equipment__c.Appraised_Value__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Equipment__c.Residual_Value__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Equipment__c.Vendor_Name__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Equipment__c.UCC_Filing_Number__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Equipment__c.UCC_Filing_Date__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Equipment__c.Insurance_Policy_Number__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Equipment__c.Insurance_Expiry__c</field><readable>true</readable></fieldPermissions>
+
+    <!-- ================= DEAL__C FIELDS ================= -->
+    <fieldPermissions><editable>true</editable><field>Deal__c.Product_Type__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Deal__c.Interest_Rate__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Deal__c.Residual_Pct__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Deal__c.Down_Payment__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Deal__c.Advance_Rate__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Deal__c.Approval_Date__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Deal__c.Funding_Date__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Deal__c.Sales_Rep__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Deal__c.Funder__c</field><readable>true</readable></fieldPermissions>
+
+    <!-- ================= CONTRACT__C FIELDS ================= -->
+    <fieldPermissions><editable>true</editable><field>Contract__c.Lease_Type__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Contract__c.Current_Balance__c</field><readable>true</readable></fieldPermissions>
+    <!-- Days_Past_Due__c is automation-managed and intentionally not editable, even for Sys Admin -->
+    <fieldPermissions><editable>false</editable><field>Contract__c.Days_Past_Due__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Contract__c.Delinquency_Bucket__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Contract__c.Payoff_Amount__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Contract__c.Payoff_Good_Through__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Contract__c.Charge_Off_Date__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Contract__c.Charge_Off_Amount__c</field><readable>true</readable></fieldPermissions>
+    <!-- Total_Payments_Received__c is a roll-up summary and is never user-editable -->
+    <fieldPermissions><editable>false</editable><field>Contract__c.Total_Payments_Received__c</field><readable>true</readable></fieldPermissions>
+
+    <!-- ================= PAYMENT_SCHEDULE__C FIELDS ================= -->
+    <fieldPermissions><editable>true</editable><field>Payment_Schedule__c.Fees_Due__c</field><readable>true</readable></fieldPermissions>
+    <!-- Total_Due__c is a formula field and is never user-editable -->
+    <fieldPermissions><editable>false</editable><field>Payment_Schedule__c.Total_Due__c</field><readable>true</readable></fieldPermissions>
+
+    <!-- ================= PAYMENT__C FIELDS ================= -->
+    <fieldPermissions><editable>true</editable><field>Payment__c.Payment_Schedule__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Payment__c.Effective_Date__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Payment__c.Fees_Applied__c</field><readable>true</readable></fieldPermissions>
+    <fieldPermissions><editable>true</editable><field>Payment__c.Reference_Number__c</field><readable>true</readable></fieldPermissions>
+
+    <!-- ================= RECORD TYPE VISIBILITY ================= -->
+    <recordTypeVisibilities><default>true</default><recordType>Account.Customer</recordType><visible>true</visible></recordTypeVisibilities>
+    <recordTypeVisibilities><default>false</default><recordType>Account.Broker</recordType><visible>true</visible></recordTypeVisibilities>
+    <recordTypeVisibilities><default>false</default><recordType>Account.Funding_Vendor</recordType><visible>true</visible></recordTypeVisibilities>
+    <recordTypeVisibilities><default>false</default><recordType>Account.Funding_Source</recordType><visible>true</visible></recordTypeVisibilities>
+    <recordTypeVisibilities><default>false</default><recordType>Account.Syndication</recordType><visible>true</visible></recordTypeVisibilities>
+    <recordTypeVisibilities><default>true</default><recordType>Contact.Guarantor</recordType><visible>true</visible></recordTypeVisibilities>
+    <recordTypeVisibilities><default>true</default><recordType>Opportunity.New_Customer</recordType><visible>true</visible></recordTypeVisibilities>
+    <recordTypeVisibilities><default>false</default><recordType>Opportunity.Returning_Customer</recordType><visible>true</visible></recordTypeVisibilities>
+
+    <!-- ================= TAB VISIBILITY ================= -->
+    <tabVisibilities><tab>Equipment__c</tab><visibility>DefaultOn</visibility></tabVisibilities>
+    <tabVisibilities><tab>Deal__c</tab><visibility>DefaultOn</visibility></tabVisibilities>
+    <tabVisibilities><tab>Contract__c</tab><visibility>DefaultOn</visibility></tabVisibilities>
+    <tabVisibilities><tab>Payment_Schedule__c</tab><visibility>DefaultOn</visibility></tabVisibilities>
+    <tabVisibilities><tab>Payment__c</tab><visibility>DefaultOn</visibility></tabVisibilities>
+</Profile>

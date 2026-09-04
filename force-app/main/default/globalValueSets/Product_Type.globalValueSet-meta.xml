@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Operating Lease</fullName>
+        <default>false</default>
+        <label>Operating Lease</label>
+    </customValue>
+    <customValue>
+        <fullName>Finance Lease</fullName>
+        <default>false</default>
+        <label>Finance Lease</label>
+    </customValue>
+    <customValue>
+        <fullName>Equipment Loan</fullName>
+        <default>false</default>
+        <label>Equipment Loan</label>
+    </customValue>
+    <customValue>
+        <fullName>Line of Credit</fullName>
+        <default>false</default>
+        <label>Line of Credit</label>
+    </customValue>
+    <masterLabel>Product_Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

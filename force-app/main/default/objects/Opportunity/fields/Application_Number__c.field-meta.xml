@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Application_Number__c</fullName>
+    <label>Application Number</label>
+    <type>AutoNumber</type>
+    <displayFormat>APP-{YYYY}-{00000}</displayFormat>
+    <startingNumber>1</startingNumber>
+    <unique>false</unique>
+</CustomField>

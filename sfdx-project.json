@@ -8,5 +8,5 @@
   "name": "Credit Mind Salesforce",
   "namespace": "",
   "sfdcLoginUrl": "https://login.salesforce.com",
-  "sourceApiVersion": "67.0"
+  "sourceApiVersion": "61.0"
 }

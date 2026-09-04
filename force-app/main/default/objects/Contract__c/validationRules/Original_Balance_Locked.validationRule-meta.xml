@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Original_Balance_Locked</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(NOT(ISNEW()), ISCHANGED(Original_Balance__c))</errorConditionFormula>
+    <errorMessage>Original Balance cannot be changed after the contract is created.</errorMessage>
+</ValidationRule>

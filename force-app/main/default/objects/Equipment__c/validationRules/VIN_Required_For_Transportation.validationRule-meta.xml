@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VIN_Required_For_Transportation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISPICKVAL(Asset_Class__c, &quot;Transportation&quot;), ISBLANK(VIN__c))</errorConditionFormula>
+    <errorMessage>VIN is required for Transportation assets.</errorMessage>
+</ValidationRule>

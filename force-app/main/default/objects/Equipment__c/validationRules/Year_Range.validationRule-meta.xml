@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Year_Range</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(NOT(ISBLANK(Year__c)), OR(Year__c &lt; 1900, Year__c &gt; YEAR(TODAY()) + 2))</errorConditionFormula>
+    <errorMessage>Year must be a valid 4-digit year.</errorMessage>
+</ValidationRule>

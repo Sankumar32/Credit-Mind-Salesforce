@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SSN_Last4__c</fullName>
+    <label>SSN Last 4</label>
+    <type>EncryptedText</type>
+    <length>4</length>
+    <maskChar>asterisk</maskChar>
+    <maskType>all</maskType>
+    <isFilteringDisabled>false</isFilteringDisabled>
+    <isSortingDisabled>false</isSortingDisabled>
+</CustomField>

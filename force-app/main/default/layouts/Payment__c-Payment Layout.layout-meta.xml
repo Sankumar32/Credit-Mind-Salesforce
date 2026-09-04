@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Layout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layoutSections>
+        <label>Payment Info</label>
+        <layoutColumns>
+            <layoutItems><behavior>Readonly</behavior><field>Name</field></layoutItems>
+            <layoutItems><behavior>Edit</behavior><field>Payment_Schedule__c</field></layoutItems>
+            <layoutItems><behavior>Edit</behavior><field>Effective_Date__c</field></layoutItems>
+        </layoutColumns>
+        <layoutColumns>
+            <layoutItems><behavior>Edit</behavior><field>Contract__c</field></layoutItems>
+            <layoutItems><behavior>Edit</behavior><field>Payment_Date__c</field></layoutItems>
+        </layoutColumns>
+        <style>TwoColumnsTopToBottom</style>
+    </layoutSections>
+    <layoutSections>
+        <label>Amount &amp; Method</label>
+        <layoutColumns>
+            <layoutItems><behavior>Edit</behavior><field>Amount_Received__c</field></layoutItems>
+            <layoutItems><behavior>Edit</behavior><field>Application_Type__c</field></layoutItems>
+        </layoutColumns>
+        <layoutColumns>
+            <layoutItems><behavior>Edit</behavior><field>Payment_Method__c</field></layoutItems>
+            <layoutItems><behavior>Edit</behavior><field>Reference_Number__c</field></layoutItems>
+        </layoutColumns>
+        <style>TwoColumnsTopToBottom</style>
+    </layoutSections>
+    <layoutSections>
+        <label>Cash Application</label>
+        <layoutColumns>
+            <layoutItems><behavior>Edit</behavior><field>Principal_Applied__c</field></layoutItems>
+            <layoutItems><behavior>Edit</behavior><field>Fees_Applied__c</field></layoutItems>
+        </layoutColumns>
+        <layoutColumns>
+            <layoutItems><behavior>Edit</behavior><field>Interest_Applied__c</field></layoutItems>
+        </layoutColumns>
+        <style>TwoColumnsTopToBottom</style>
+    </layoutSections>
+</Layout>

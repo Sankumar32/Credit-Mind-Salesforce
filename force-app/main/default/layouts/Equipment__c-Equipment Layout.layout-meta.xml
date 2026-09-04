@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Layout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layoutSections>
+        <label>Asset Identity</label>
+        <layoutColumns>
+            <layoutItems><behavior>Edit</behavior><field>Deal__c</field></layoutItems>
+            <layoutItems><behavior>Edit</behavior><field>Asset_Description__c</field></layoutItems>
+            <layoutItems><behavior>Edit</behavior><field>Condition__c</field></layoutItems>
+        </layoutColumns>
+        <layoutColumns>
+            <layoutItems><behavior>Required</behavior><field>Name</field></layoutItems>
+            <layoutItems><behavior>Edit</behavior><field>Asset_Class__c</field></layoutItems>
+        </layoutColumns>
+        <style>TwoColumnsTopToBottom</style>
+    </layoutSections>
+    <layoutSections>
+        <label>Asset Details</label>
+        <layoutColumns>
+            <layoutItems><behavior>Edit</behavior><field>Make__c</field></layoutItems>
+            <layoutItems><behavior>Edit</behavior><field>Year__c</field></layoutItems>
+            <layoutItems><behavior>Edit</behavior><field>VIN__c</field></layoutItems>
+        </layoutColumns>
+        <layoutColumns>
+            <layoutItems><behavior>Edit</behavior><field>Model__c</field></layoutItems>
+            <layoutItems><behavior>Edit</behavior><field>Serial_Number__c</field></layoutItems>
+        </layoutColumns>
+        <style>TwoColumnsTopToBottom</style>
+    </layoutSections>
+    <layoutSections>
+        <label>Valuation</label>
+        <layoutColumns>
+            <layoutItems><behavior>Edit</behavior><field>Invoice_Amount__c</field></layoutItems>
+            <layoutItems><behavior>Edit</behavior><field>Residual_Value__c</field></layoutItems>
+        </layoutColumns>
+        <layoutColumns>
+            <layoutItems><behavior>Edit</behavior><field>Appraised_Value__c</field></layoutItems>
+        </layoutColumns>
+        <style>TwoColumnsTopToBottom</style>
+    </layoutSections>
+    <layoutSections>
+        <label>Vendor</label>
+        <layoutColumns>
+            <layoutItems><behavior>Edit</behavior><field>Vendor_Name__c</field></layoutItems>
+        </layoutColumns>
+        <style>OneColumn</style>
+    </layoutSections>
+    <layoutSections>
+        <label>Lien &amp; Insurance</label>
+        <layoutColumns>
+            <layoutItems><behavior>Edit</behavior><field>UCC_Filing_Number__c</field></layoutItems>
+            <layoutItems><behavior>Edit</behavior><field>Insurance_Policy_Number__c</field></layoutItems>
+        </layoutColumns>
+        <layoutColumns>
+            <layoutItems><behavior>Edit</behavior><field>UCC_Filing_Date__c</field></layoutItems>
+            <layoutItems><behavior>Edit</behavior><field>Insurance_Expiry__c</field></layoutItems>
+        </layoutColumns>
+        <style>TwoColumnsTopToBottom</style>
+    </layoutSections>
+    <layoutSections>
+        <label>System Information</label>
+        <layoutColumns>
+            <layoutItems><behavior>Readonly</behavior><field>CreatedById</field></layoutItems>
+        </layoutColumns>
+        <layoutColumns>
+            <layoutItems><behavior>Readonly</behavior><field>LastModifiedById</field></layoutItems>
+        </layoutColumns>
+        <style>TwoColumnsTopToBottom</style>
+    </layoutSections>
+</Layout>
