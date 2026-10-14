@@ -16,7 +16,8 @@
     <tabs>Contract__c</tabs>
     <tabs>Payment_Schedule__c</tabs>
     <tabs>Payment__c</tabs>
-    <tabs>standard-report</tabs>
-    <tabs>standard-Dashboard</tabs>
+    <tabs>Broker__c</tabs>
+    <tabs>Funding_Source__c</tabs>
+    <tabs>Funding_Vendor__c</tabs>
     <uiType>Lightning</uiType>
 </CustomApplication>

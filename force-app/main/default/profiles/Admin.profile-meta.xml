@@ -11,9 +11,7 @@
 
     <!-- ================= LAYOUT ASSIGNMENTS ================= -->
     <layoutAssignments><layout>Account-Customer Layout</layout><recordType>Account.Customer</recordType></layoutAssignments>
-    <layoutAssignments><layout>Account-Broker Layout</layout><recordType>Account.Broker</recordType></layoutAssignments>
-    <layoutAssignments><layout>Account-Funding Vendor Layout</layout><recordType>Account.Funding_Vendor</recordType></layoutAssignments>
-    <layoutAssignments><layout>Account-Funding Source Layout</layout><recordType>Account.Funding_Source</recordType></layoutAssignments>
+
     <layoutAssignments><layout>Account-Syndication Layout</layout><recordType>Account.Syndication</recordType></layoutAssignments>
     <layoutAssignments><layout>Contact-Guarantor Layout</layout><recordType>Contact.Guarantor</recordType></layoutAssignments>
     <layoutAssignments><layout>Opportunity-New Customer Layout</layout><recordType>Opportunity.New_Customer</recordType></layoutAssignments>
@@ -179,9 +177,6 @@
 
     <!-- ================= RECORD TYPE VISIBILITY ================= -->
     <recordTypeVisibilities><default>true</default><recordType>Account.Customer</recordType><visible>true</visible></recordTypeVisibilities>
-    <recordTypeVisibilities><default>false</default><recordType>Account.Broker</recordType><visible>true</visible></recordTypeVisibilities>
-    <recordTypeVisibilities><default>false</default><recordType>Account.Funding_Vendor</recordType><visible>true</visible></recordTypeVisibilities>
-    <recordTypeVisibilities><default>false</default><recordType>Account.Funding_Source</recordType><visible>true</visible></recordTypeVisibilities>
     <recordTypeVisibilities><default>false</default><recordType>Account.Syndication</recordType><visible>true</visible></recordTypeVisibilities>
     <recordTypeVisibilities><default>true</default><recordType>Contact.Guarantor</recordType><visible>true</visible></recordTypeVisibilities>
     <recordTypeVisibilities><default>true</default><recordType>Opportunity.New_Customer</recordType><visible>true</visible></recordTypeVisibilities>

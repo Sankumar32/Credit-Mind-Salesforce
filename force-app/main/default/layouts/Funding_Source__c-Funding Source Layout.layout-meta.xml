@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Layout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layoutSections>
+        <label>Funding Source Information</label>
+        <layoutColumns>
+            <layoutItems><behavior>Required</behavior><field>Name</field></layoutItems>
+            <layoutItems><behavior>Edit</behavior><field>Phone__c</field></layoutItems>
+            <layoutItems><behavior>Edit</behavior><field>Email__c</field></layoutItems>
+        </layoutColumns>
+        <layoutColumns>
+            <layoutItems><behavior>Edit</behavior><field>Entity_Type__c</field></layoutItems>
+            <layoutItems><behavior>Edit</behavior><field>Status__c</field></layoutItems>
+            <layoutItems><behavior>Edit</behavior><field>Website__c</field></layoutItems>
+        </layoutColumns>
+        <style>TwoColumnsTopToBottom</style>
+    </layoutSections>
+    <layoutSections>
+        <label>Financials</label>
+        <layoutColumns>
+            <layoutItems><behavior>Edit</behavior><field>Annual_Revenue__c</field></layoutItems>
+            <layoutItems><behavior>Edit</behavior><field>Credit_Limit__c</field></layoutItems>
+        </layoutColumns>
+        <layoutColumns>
+            <layoutItems><behavior>Edit</behavior><field>Advance_Rate_Max__c</field></layoutItems>
+        </layoutColumns>
+        <style>TwoColumnsTopToBottom</style>
+    </layoutSections>
+    <layoutSections>
+        <label>Rate Range</label>
+        <layoutColumns>
+            <layoutItems><behavior>Edit</behavior><field>Interest_Rate_Min__c</field></layoutItems>
+        </layoutColumns>
+        <layoutColumns>
+            <layoutItems><behavior>Edit</behavior><field>Interest_Rate_Max__c</field></layoutItems>
+        </layoutColumns>
+        <style>TwoColumnsTopToBottom</style>
+    </layoutSections>
+    <layoutSections>
+        <label>System Information</label>
+        <layoutColumns>
+            <layoutItems><behavior>Readonly</behavior><field>CreatedById</field></layoutItems>
+        </layoutColumns>
+        <layoutColumns>
+            <layoutItems><behavior>Readonly</behavior><field>LastModifiedById</field></layoutItems>
+        </layoutColumns>
+        <style>TwoColumnsTopToBottom</style>
+    </layoutSections>
+</Layout>

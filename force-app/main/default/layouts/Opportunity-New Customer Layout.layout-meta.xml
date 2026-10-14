@@ -15,6 +15,17 @@
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
     <layoutSections>
+        <label>Partners</label>
+        <layoutColumns>
+            <layoutItems><behavior>Edit</behavior><field>Broker__c</field></layoutItems>
+            <layoutItems><behavior>Edit</behavior><field>Funding_Source__c</field></layoutItems>
+        </layoutColumns>
+        <layoutColumns>
+            <layoutItems><behavior>Edit</behavior><field>Funding_Vendor__c</field></layoutItems>
+        </layoutColumns>
+        <style>TwoColumnsTopToBottom</style>
+    </layoutSections>
+    <layoutSections>
         <label>Deal Structure</label>
         <layoutColumns>
             <layoutItems><behavior>Edit</behavior><field>Product_Type__c</field></layoutItems>

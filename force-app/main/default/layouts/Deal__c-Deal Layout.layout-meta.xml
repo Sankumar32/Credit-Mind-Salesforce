@@ -47,6 +47,16 @@
         <style>TwoColumnsTopToBottom</style>
     </layoutSections>
     <layoutSections>
+        <label>Partners</label>
+        <layoutColumns>
+            <layoutItems><behavior>Edit</behavior><field>Broker__c</field></layoutItems>
+        </layoutColumns>
+        <layoutColumns>
+            <layoutItems><behavior>Edit</behavior><field>Funding_Source__c</field></layoutItems>
+        </layoutColumns>
+        <style>TwoColumnsTopToBottom</style>
+    </layoutSections>
+    <layoutSections>
         <label>System Information</label>
         <layoutColumns>
             <layoutItems><behavior>Readonly</behavior><field>CreatedById</field></layoutItems>
