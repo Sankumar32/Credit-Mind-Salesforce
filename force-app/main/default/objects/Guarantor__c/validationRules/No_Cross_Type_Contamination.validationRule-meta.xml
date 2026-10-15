@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>No_Cross_Type_Contamination</fullName>
+    <active>true</active>
+    <description>Prevents setting both Contact and Account on the same Guarantor record.</description>
+    <errorConditionFormula>AND(
+  NOT(ISBLANK(Personal_Guarantor__c)),
+  NOT(ISBLANK(Corporate_Guarantor__c))
+)</errorConditionFormula>
+    <errorMessage>A Guarantor record cannot reference both a Contact and an Account. Set only the field that matches the Type.</errorMessage>
+</ValidationRule>

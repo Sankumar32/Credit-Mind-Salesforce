@@ -13,7 +13,7 @@
     <layoutAssignments><layout>Account-Customer Layout</layout><recordType>Account.Customer</recordType></layoutAssignments>
 
     <layoutAssignments><layout>Account-Syndication Layout</layout><recordType>Account.Syndication</recordType></layoutAssignments>
-    <layoutAssignments><layout>Contact-Guarantor Layout</layout><recordType>Contact.Guarantor</recordType></layoutAssignments>
+
     <layoutAssignments><layout>Opportunity-New Customer Layout</layout><recordType>Opportunity.New_Customer</recordType></layoutAssignments>
     <layoutAssignments><layout>Opportunity-Returning Customer Layout</layout><recordType>Opportunity.Returning_Customer</recordType></layoutAssignments>
     <layoutAssignments><layout>Equipment__c-Equipment Layout</layout></layoutAssignments>
@@ -178,7 +178,7 @@
     <!-- ================= RECORD TYPE VISIBILITY ================= -->
     <recordTypeVisibilities><default>true</default><recordType>Account.Customer</recordType><visible>true</visible></recordTypeVisibilities>
     <recordTypeVisibilities><default>false</default><recordType>Account.Syndication</recordType><visible>true</visible></recordTypeVisibilities>
-    <recordTypeVisibilities><default>true</default><recordType>Contact.Guarantor</recordType><visible>true</visible></recordTypeVisibilities>
+
     <recordTypeVisibilities><default>true</default><recordType>Opportunity.New_Customer</recordType><visible>true</visible></recordTypeVisibilities>
     <recordTypeVisibilities><default>false</default><recordType>Opportunity.Returning_Customer</recordType><visible>true</visible></recordTypeVisibilities>
 

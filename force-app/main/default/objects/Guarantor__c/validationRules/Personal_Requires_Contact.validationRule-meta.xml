@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Personal_Requires_Contact</fullName>
+    <active>true</active>
+    <description>When Type is Personal, a Contact must be selected and Account must be blank.</description>
+    <errorConditionFormula>AND(
+  ISPICKVAL(Type__c, 'Personal'),
+  ISBLANK(Personal_Guarantor__c)
+)</errorConditionFormula>
+    <errorMessage>Personal guarantors must reference a Contact. Please select a Contact in the Personal Guarantor field.</errorMessage>
+</ValidationRule>

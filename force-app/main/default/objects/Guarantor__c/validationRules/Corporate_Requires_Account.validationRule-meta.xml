@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Corporate_Requires_Account</fullName>
+    <active>true</active>
+    <description>When Type is Corporate, an Account must be selected and Contact must be blank.</description>
+    <errorConditionFormula>AND(
+  ISPICKVAL(Type__c, 'Corporate'),
+  ISBLANK(Corporate_Guarantor__c)
+)</errorConditionFormula>
+    <errorMessage>Corporate guarantors must reference an Account. Please select an Account in the Corporate Guarantor field.</errorMessage>
+</ValidationRule>
